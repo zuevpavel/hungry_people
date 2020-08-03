@@ -312,11 +312,135 @@ option:active {
   color: cyan;
 }
 
+// .slider {
+//   width: 100%;
+// }
+// .slider__item1 {
+//   display: flex;
+//   justify-content: center;
+// }
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 45px;
+  left: 0;
+  right: 0;
+}
+.slick-dots li {
+list-style: none;
+margin: 0 10px;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  // margin: 0 10px;
+  opacity: 0.5;
+  outline: none;
+}
+.slick-dots li.slick-active button {
+  opacity: 1;
+}
+.about-slide {
+  background: url('../img/specialty-bg4.jpg');
+  margin: 0;
+}
+.slider {
+  position: relative;
+  margin: 0 -40px;
+}
+.menu {
+  padding-top: 100px;
+}
+.menu__subtitle {
+  text-align: center;
+}
+.tabs__items {
+  display: flex;
+  justify-content: space-around;
+}
+.tabs__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
 
+}
+.tabs__block {
+  // padding: 20px 0;
+  font-size: 18px;
+  display: none;
+  position: relative;
+}
+.tabs__block:nth-child(1) {
+  background-color: rgb(146, 80, 80);
+}
+.tabs__block:nth-child(2) {
+  background-color: rgb(90, 134, 53);
+}
+.tabs__block:nth-child(3) {
+  background-color: rgb(38, 88, 97);
+}
+.tabs__block:nth-child(4) {
+  background-color: rgb(75, 61, 94);
+}
+.tabs__block:nth-child(5) {
+  background-color: rgb(196, 41, 136);
+}
+.tabs__block:nth-child(6) {
+  background-color: rgb(231, 101, 49);
+}
+.tabs__block:nth-child(7) {
+  background-color: rgb(8, 12, 247);
+}
+.tabs__block:target {
+  display: block;
+}
+// .tabs__block:before {
+//   content: '';
+//   position: absolute;
+//   height: 50px;
+//   top: -50px;
+//   width: 100px;
 
-
-
-
-
+// }
+.tabs__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tabs__list li {
+  padding-top: 25px;
+  // width: 33.3333%;
+  list-style: none;
+  // text-align: center;
+  text-transform: uppercase;
+}
+.tabs__link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  font-family: 'BannyRound', sans-serif;
+}
+.tabs__link span {
+  margin-top: -4px;
+  display: block;
+  font-size: 12px;
+  color: #333;
+  opacity: 0.5;
+  text-transform: none;
+}
 
 @import "media";
