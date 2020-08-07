@@ -268,7 +268,6 @@ body {
 
 .header__list {
   width: 41%;
-  height: 100px;
   padding: 0 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -302,6 +301,58 @@ body {
 
 .header__link:hover {
   color: #E8C300;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+  .header__burger:before,
+  .header__burger:after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header__burger:before {
+    top: 0;
+  }
+  .header__burger:after {
+    bottom: 0;
+  }
+  .header__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+  }
+  .header__list li {
+    padding: 7px 0;
+  }
 }
 
 .head {
@@ -739,6 +790,7 @@ option:active {
 }
 
 .tabs__link {
+  display: block;
   font-size: 18px;
   text-decoration: none;
   color: #333;
